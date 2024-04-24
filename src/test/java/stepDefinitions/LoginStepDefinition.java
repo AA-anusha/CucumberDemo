@@ -50,7 +50,7 @@ public class LoginStepDefinition {
 		
 		Assert.assertEquals("Logged In Successfully", successMessage);
 		
-		System.out.println("Login Successfull");
+		System.out.println("Login Successful!");
 		
 			
 		}
