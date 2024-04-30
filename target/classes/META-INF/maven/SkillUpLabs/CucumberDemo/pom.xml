@@ -92,28 +92,22 @@
     <artifactId>maven-cucumber-reporting</artifactId>
     <version>5.8.0</version>
     <executions>
-        <execution>
-            <id>execution</id>
-            <phase>verify</phase>
-            <goals>
-                <goal>test</goal>
-            </goals>
-            <configuration>
-                <projectName>CucumberDemo</projectName>
-                <!-- output directory for the generated report -->
-                <outputDirectory>${project.build.directory}/cucumber-maven-report</outputDirectory>
-                <inputDirectory>${project.build.directory}/cucumber-json</inputDirectory>
-                <jsonFiles>
-                    <!-- supports wildcard or name pattern -->
-                    <param>**/*.json</param>
-                </jsonFiles>
-                <skippedFails>true</skippedFails>
-                <enableFlashCharts>true</enableFlashCharts>
-                <buildNumber>10.2.1</buildNumber>
-                <parallelTesting>false</parallelTesting>
-            </configuration>
-        </execution>
-    </executions>
+                    <execution>
+                        <id>execution</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                        <configuration>
+     <projectName>CucumberDemo</projectName>
+     <outputDirectory>${project.build.directory}/cucumber-report-html</outputDirectory>
+     <inputDirectory>${project.build.directory}</inputDirectory>
+     <jsonFiles>
+          <param>**/*.json</param>
+     </jsonFiles>
+</configuration>
+                    </execution>
+                </executions>
 </plugin>
 		</plugins>
 	</build>
