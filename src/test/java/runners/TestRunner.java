@@ -9,7 +9,7 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		features = "src/test/java/features/login.feature",
 		glue ="stepDefinitions",
-		plugin = {"pretty","html:target/cucmber-reports"
+		plugin = {"pretty","html:target/cucumber-maven-report", "json:target/cucumber-json/cucumber.json" 
 				}
 		 )
 
