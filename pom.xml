@@ -96,7 +96,7 @@
             <id>execution</id>
             <phase>verify</phase>
             <goals>
-                <goal>generate</goal>
+                <goal>test</goal>
             </goals>
             <configuration>
                 <projectName>CucumberDemo</projectName>
