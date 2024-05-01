@@ -16,7 +16,7 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
-@tag
+@LoginAnusha
 Feature: Login Test
  
 
